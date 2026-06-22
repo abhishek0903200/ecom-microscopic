@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/product
+    url: jdbc:postgresql://localhost:5432/productdb
 #    url: jdbc:mysql://localhost:3307/embarkx
     username: ${DB_USER}
     password: ${DB_PASSWORD}
@@ -39,7 +39,7 @@ app:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
 
