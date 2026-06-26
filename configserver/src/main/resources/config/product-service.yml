@@ -1,6 +1,10 @@
 spring:
   datasource:
+<<<<<<< HEAD
     url: jdbc:postgresql://postgres:5432/product
+=======
+    url: jdbc:postgresql://localhost:5432/productdb
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
 #    url: jdbc:mysql://localhost:3307/embarkx
     username: ${DB_USER}
     password: ${DB_PASSWORD}
@@ -39,7 +43,11 @@ app:
 eureka:
   client:
     serviceUrl:
+<<<<<<< HEAD
       defaultZone: http://eureka:8761/eureka/
+=======
+      defaultZone: http://localhost:8761/eureka/
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
     register-with-eureka: true
     fetch-registry: true
 
@@ -50,4 +58,8 @@ logging:
   logback:
     rollingpolicy:
       max-file-size: 5MB
+<<<<<<< HEAD
       max-history: 7
+=======
+      max-history: 7
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

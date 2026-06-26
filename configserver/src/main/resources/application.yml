@@ -3,6 +3,7 @@ spring:
     name: configserver
   profiles:
     active: native
+<<<<<<< HEAD
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
@@ -10,17 +11,34 @@ spring:
     password: ${RABBITMQ_PASSWORD:guest}
     virtual-host: ${RABBITMQ_VHOST:guest}
     connection-timeout: 30000
+=======
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
   cloud:
     config:
       server:
         native:
+<<<<<<< HEAD
           search-locations: file:///C:\Users\FAISAL\Desktop\courses\embarkx\Microservices\ecom-microservices\configserver\src\main\resources\config
+=======
+          search-locations: file:///D:\ecom-microservices-main\additional\config-mgmt\configserver\src\main\resources\config
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
 
 server:
   port: 8888
 
 management:
+<<<<<<< HEAD
   endpoints:
     web:
       exposure:
         include: "*"
+=======
+  health:
+    rabbit:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

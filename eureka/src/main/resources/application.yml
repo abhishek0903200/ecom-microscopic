@@ -8,4 +8,8 @@ server:
 eureka:
   client:
     register-with-eureka: false
+<<<<<<< HEAD
     fetch-registry: false
+=======
+    fetch-registry: false
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

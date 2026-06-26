@@ -11,4 +11,10 @@ management:
         include: refresh
 
 #  BUILD_ID=4444;BUILD_NAME=NAME_TEST;BUILD_VERSION=1.0.0
+<<<<<<< HEAD
 # ID=9999;NAME=NEW_NAME;VERSION=3.3.3.3
+=======
+# ID=9999;NAME=NEW_NAME;VERSION=3.3.3.3
+
+
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

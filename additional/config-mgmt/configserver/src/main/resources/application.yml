@@ -7,7 +7,11 @@ spring:
     config:
       server:
         native:
+<<<<<<< HEAD
           search-locations: file:///C:\Users\FAISAL\Desktop\courses\embarkx\Microservices\ecom-microservices\additional\config-mgmt\configserver\src\main\resources\config
+=======
+          search-locations: classpath\config
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
   rabbitmq:
     host: localhost
     port: 5672
@@ -23,7 +27,11 @@ management:
 #    config:
 #      server:
 #        git:
+<<<<<<< HEAD
 #          uri: https://github.com/faisal-courses/app-configuration
+=======
+#          uri: https://github.com/abhishek0903200/app-configuration.git
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
 #          username: ${GIT_USER}
 #          password: ${GIT_TOKEN}
 #  profiles:
@@ -42,6 +50,7 @@ management:
 
 server:
   port: 8888
+<<<<<<< HEAD
 
 #encrypt:
 #  key: "0E329232EA6D0D73"
@@ -51,3 +60,14 @@ encrypt:
     location: config-server.jks
     password: mypass
     alias: config-server-key
+=======
+#
+##encrypt:
+##  key: "0E329232EA6D0D73"
+#
+#encrypt:
+#  key-store:
+#    location: config-server.jks
+#    password: mypass
+#    alias: config-server-key
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

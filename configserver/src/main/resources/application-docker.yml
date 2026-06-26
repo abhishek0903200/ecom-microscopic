@@ -8,7 +8,11 @@ spring:
     port: ${RABBITMQ_PORT:5672}
     username: ${RABBITMQ_USERNAME:guest}
     password: ${RABBITMQ_PASSWORD:guest}
+<<<<<<< HEAD
     virtual-host: ${RABBITMQ_VHOST:guest}
+=======
+    virtual-host: ${RABBITMQ_VHOST:/}
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
     connection-timeout: 30000
   cloud:
     config:
@@ -23,4 +27,8 @@ management:
   endpoints:
     web:
       exposure:
+<<<<<<< HEAD
         include: "*"
+=======
+        include: "*"
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7

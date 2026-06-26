@@ -26,11 +26,18 @@ public class CartService {
     int attempt = 0;
 
 //    @CircuitBreaker(name = "productService", fallbackMethod = "addToCartFallBack")
+<<<<<<< HEAD
     @Retry(name = "retryBreaker", fallbackMethod = "addToCartFallBack")
     public boolean addToCart(String userId, CartItemRequest request) {
         System.out.println("ATTEMPT COUNT: " + ++attempt);
         // Look for product
 
+=======
+@Retry(name = "retryBreaker", fallbackMethod = "addToCartFallBack")
+    public boolean addToCart(String userId, CartItemRequest request) {
+        System.out.println("ATTEMPT COUNT: " + ++attempt);
+        // Look for product
+>>>>>>> 98dd4245391fe1cff2886406a1318aadb1c311d7
         ProductResponse productResponse = productServiceClient.getProductDetails(request.getProductId());
         if (productResponse == null || productResponse.getStockQuantity() < request.getQuantity())
             return false;
